@@ -52,10 +52,7 @@
       "shift+RIGHTMOUSE", 
       [
         [
-          "Merge at last", 
-          "COMMAND", 
-          "", 
-          "bpy.ops.mesh.merge(type='LAST')"
+          ""
         ], 
         [
           "Bevel", 
@@ -64,16 +61,16 @@
           "bpy.ops.mesh.bevel(vertex_only=True)"
         ], 
         [
-          "Vertex Connect", 
+          "Connect", 
           "COMMAND", 
           "", 
           "bpy.ops.mesh.vert_connect()"
         ], 
         [
-          "Merge Tool Operator", 
+          "Merge", 
           "COMMAND", 
           "", 
-          "bpy.ops.object.merge_tool()"
+          "open_menu(\"VertexMergeMenu\")"
         ], 
         [
           ""
@@ -82,7 +79,10 @@
           ""
         ], 
         [
-          ""
+          "Dissolve", 
+          "COMMAND", 
+          "", 
+          "bpy.ops.mesh.dissolve_verts(use_face_split=False)"
         ], 
         [
           ""
@@ -92,6 +92,57 @@
       "pm?", 
       "PRESS", 
       "return C.scene.tool_settings.mesh_select_mode[0]", 
+      ""
+    ], 
+    [
+      "VertexMergeMenu", 
+      "3D View", 
+      "", 
+      [
+        [
+          "First", 
+          "COMMAND", 
+          "", 
+          "bpy.ops.mesh.merge(type='FIRST')"
+        ], 
+        [
+          "Last", 
+          "COMMAND", 
+          "", 
+          "bpy.ops.mesh.merge(type='LAST')"
+        ], 
+        [
+          "Collapse", 
+          "COMMAND", 
+          "", 
+          "bpy.ops.mesh.merge(type='COLLAPSE')"
+        ], 
+        [
+          "Center", 
+          "COMMAND", 
+          "", 
+          "bpy.ops.mesh.merge(type='CENTER')"
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          "Cursor", 
+          "COMMAND", 
+          "", 
+          "bpy.ops.mesh.merge(type='CURSOR')"
+        ], 
+        [
+          ""
+        ]
+      ], 
+      "PMENU", 
+      "pm?pm_radius=49", 
+      "PRESS", 
+      "", 
       ""
     ], 
     [
@@ -194,9 +245,9 @@
       ""
     ], 
     [
-      "EdgeSelection", 
+      "ConvertSelection", 
       "3D View", 
-      "ctrl+alt+RIGHTMOUSE", 
+      "ctrl+RIGHTMOUSE", 
       [
         [
           ""
@@ -231,8 +282,8 @@
       ], 
       "PMENU", 
       "pm?", 
-      "PRESS", 
-      "return C.scene.tool_settings.mesh_select_mode[1]", 
+      "TWEAK", 
+      "return bpy.context.object.mode == 'EDIT'", 
       ""
     ], 
     [
@@ -279,8 +330,8 @@
         [
           "Clear Selection", 
           "COMMAND", 
-          "", 
-          "bpy.ops.mesh.select_all(action='DESELECT') if bpy.ops.object.mode_set(mode='OBJECT') else bpy.ops.object.select_all(action='DESELECT')"
+          "SELECT_SET", 
+          "if bpy.context.object.mode == 'OBJECT':\n    bpy.ops.object.select_all(action='DESELECT')\nelif bpy.context.object.mode == 'EDIT':\n    bpy.ops.mesh.select_all(action='DESELECT')"
         ], 
         [
           "Occlude Geometry", 
