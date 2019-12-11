@@ -2,6 +2,84 @@
   "version": "1.16.4", 
   "menus": [
     [
+      "EdgeSelection", 
+      "3D View", 
+      "ctrl+alt+RIGHTMOUSE", 
+      [
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          "Select Edge Ring", 
+          "COMMAND", 
+          "", 
+          "bpy.ops.mesh.loop_multi_select(ring=True)"
+        ], 
+        [
+          "Select Edge Loop", 
+          "COMMAND", 
+          "", 
+          "bpy.ops.mesh.loop_multi_select(ring=False)"
+        ]
+      ], 
+      "PMENU", 
+      "pm?", 
+      "PRESS", 
+      "return C.scene.tool_settings.mesh_select_mode[1]", 
+      ""
+    ], 
+    [
+      "RnD Pie _UV", 
+      "UV Editor", 
+      "", 
+      [
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ]
+      ], 
+      "PMENU", 
+      "pm?", 
+      "PRESS", 
+      "", 
+      ""
+    ], 
+    [
       "Face", 
       "3D View", 
       "shift+RIGHTMOUSE", 
@@ -298,10 +376,10 @@
           "bpy.ops.object.mode_set(mode='EDIT');bpy.ops.mesh.select_mode(type='VERT')"
         ], 
         [
-          "Toggle Edit/Sculpt Mode", 
+          "Move Toggle", 
           "COMMAND", 
-          "SCULPTMODE_HLT", 
-          "bpy.ops.sculpt.sculptmode_toggle()"
+          "VIEW_PAN", 
+          "bpy.ops.sculpt.sculptmode_toggle();bpy.ops.wm.tool_set_by_id(name='builtin_brush.Grab')"
         ], 
         [
           "Face", 
