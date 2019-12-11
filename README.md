@@ -1,5 +1,5 @@
 # blending_maya
-Reconfiguring Blender to make it feel like Maya
+Reconfiguring Blender to make it feel a bit more like Maya
 
 ## Modified Blender keymap
 keymap.py
