@@ -376,7 +376,7 @@
           "bpy.ops.object.mode_set(mode='EDIT');bpy.ops.mesh.select_mode(type='VERT')"
         ], 
         [
-          "Move Toggle", 
+          "Toggle Move Brush", 
           "COMMAND", 
           "VIEW_PAN", 
           "bpy.ops.sculpt.sculptmode_toggle();bpy.ops.wm.tool_set_by_id(name='builtin_brush.Grab')"
