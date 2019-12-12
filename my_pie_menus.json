@@ -22,7 +22,10 @@
           ""
         ], 
         [
-          ""
+          "Show Gizmo", 
+          "PROP", 
+          "NONE", 
+          "C.space_data.show_gizmo"
         ], 
         [
           "Import FBX", 
