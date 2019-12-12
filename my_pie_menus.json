@@ -2,6 +2,54 @@
   "version": "1.16.4", 
   "menus": [
     [
+      "Import_Export", 
+      "Window", 
+      "Q", 
+      [
+        [
+          "Import OBJ", 
+          "COMMAND", 
+          "", 
+          "bpy.ops.import_scene.obj()"
+        ], 
+        [
+          "Export OBJ", 
+          "COMMAND", 
+          "", 
+          "bpy.ops.export_scene.obj()"
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          "Import FBX", 
+          "COMMAND", 
+          "", 
+          "bpy.ops.import_scene.fbx()"
+        ], 
+        [
+          "Export FBX", 
+          "COMMAND", 
+          "", 
+          "bpy.ops.export_scene.fbx()"
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ]
+      ], 
+      "PMENU", 
+      "pm?", 
+      "PRESS", 
+      "", 
+      ""
+    ], 
+    [
       "EdgeSelection", 
       "3D View", 
       "ctrl+alt+RIGHTMOUSE", 
