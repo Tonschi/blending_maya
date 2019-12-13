@@ -457,10 +457,10 @@
           "bpy.ops.object.editmode_toggle()"
         ], 
         [
-          "Clear Selection", 
-          "COMMAND", 
-          "SELECT_SET", 
-          "if bpy.context.object.mode == 'OBJECT':\n    bpy.ops.object.select_all(action='DESELECT')\nelif bpy.context.object.mode == 'EDIT':\n    bpy.ops.mesh.select_all(action='DESELECT')"
+          "Orientation", 
+          "MENU", 
+          "NONE", 
+          "Transform Orientations"
         ], 
         [
           "Occlude Geometry", 
@@ -471,6 +471,72 @@
       ], 
       "PMENU", 
       "pm?", 
+      "PRESS", 
+      "", 
+      ""
+    ], 
+    [
+      "Transform Orientations", 
+      "3D View", 
+      "", 
+      [
+        [
+          "row"
+        ], 
+        [
+          "Global", 
+          "COMMAND", 
+          "ORIENTATION_GLOBAL", 
+          "C.scene.transform_orientation_slots[0].type = 'GLOBAL'"
+        ], 
+        [
+          "row?"
+        ], 
+        [
+          "Local", 
+          "COMMAND", 
+          "ORIENTATION_LOCAL", 
+          "C.scene.transform_orientation_slots[0].type = 'LOCAL'"
+        ], 
+        [
+          "row?"
+        ], 
+        [
+          "Normal", 
+          "COMMAND", 
+          "ORIENTATION_NORMAL", 
+          "C.scene.transform_orientation_slots[0].type = 'NORMAL'"
+        ], 
+        [
+          "row?"
+        ], 
+        [
+          "Gimbal", 
+          "COMMAND", 
+          "ORIENTATION_GIMBAL", 
+          "C.scene.transform_orientation_slots[0].type = 'GIMBAL'"
+        ], 
+        [
+          "row?"
+        ], 
+        [
+          "View", 
+          "COMMAND", 
+          "ORIENTATION_VIEW", 
+          "C.scene.transform_orientation_slots[0].type = 'VIEW'"
+        ], 
+        [
+          "row?"
+        ], 
+        [
+          "Cursor", 
+          "COMMAND", 
+          "ORIENTATION_CURSOR", 
+          "C.scene.transform_orientation_slots[0].type = 'CURSOR'"
+        ]
+      ], 
+      "DIALOG", 
+      "pd?pd_panel=2&pd_width=110", 
       "PRESS", 
       "", 
       ""
@@ -536,7 +602,7 @@
       ""
     ], 
     [
-      "Pie Menu", 
+      "Origin", 
       "Window", 
       "shift+C", 
       [
