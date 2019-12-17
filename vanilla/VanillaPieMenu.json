@@ -380,132 +380,6 @@
       ""
     ], 
     [
-      "Modes", 
-      "3D View", 
-      "RIGHTMOUSE", 
-      [
-        [
-          "Vertex", 
-          "COMMAND", 
-          "VERTEXSEL", 
-          "bpy.ops.object.mode_set(mode='EDIT');bpy.ops.mesh.select_mode(type='VERT')"
-        ], 
-        [
-          "Toggle Move Brush", 
-          "COMMAND", 
-          "VIEW_PAN", 
-          "bpy.ops.sculpt.sculptmode_toggle();bpy.ops.wm.tool_set_by_id(name='builtin_brush.Grab')"
-        ], 
-        [
-          "Face", 
-          "COMMAND", 
-          "FACESEL", 
-          "bpy.ops.object.mode_set(mode='EDIT');bpy.ops.mesh.select_mode(type='FACE')"
-        ], 
-        [
-          "Edge", 
-          "COMMAND", 
-          "EDGESEL", 
-          "bpy.ops.object.mode_set(mode='EDIT');bpy.ops.mesh.select_mode(type='EDGE')"
-        ], 
-        [
-          "Show Hidden", 
-          "COMMAND", 
-          "", 
-          "bpy.ops.object.hide_view_clear()"
-        ], 
-        [
-          "Toggle Edit/Object Mode", 
-          "COMMAND", 
-          "EDITMODE_HLT", 
-          "bpy.ops.object.editmode_toggle()"
-        ], 
-        [
-          "Orientation", 
-          "MENU", 
-          "NONE", 
-          "Transform Orientations"
-        ], 
-        [
-          "Occlude Geometry", 
-          "PROP", 
-          "XRAY", 
-          "C.space_data.shading.show_xray"
-        ]
-      ], 
-      "PMENU", 
-      "pm?", 
-      "PRESS", 
-      "", 
-      ""
-    ], 
-    [
-      "Transform Orientations", 
-      "3D View", 
-      "", 
-      [
-        [
-          "row"
-        ], 
-        [
-          "Global", 
-          "COMMAND", 
-          "ORIENTATION_GLOBAL", 
-          "C.scene.transform_orientation_slots[0].type = 'GLOBAL'"
-        ], 
-        [
-          "row?"
-        ], 
-        [
-          "Local", 
-          "COMMAND", 
-          "ORIENTATION_LOCAL", 
-          "C.scene.transform_orientation_slots[0].type = 'LOCAL'"
-        ], 
-        [
-          "row?"
-        ], 
-        [
-          "Normal", 
-          "COMMAND", 
-          "ORIENTATION_NORMAL", 
-          "C.scene.transform_orientation_slots[0].type = 'NORMAL'"
-        ], 
-        [
-          "row?"
-        ], 
-        [
-          "Gimbal", 
-          "COMMAND", 
-          "ORIENTATION_GIMBAL", 
-          "C.scene.transform_orientation_slots[0].type = 'GIMBAL'"
-        ], 
-        [
-          "row?"
-        ], 
-        [
-          "View", 
-          "COMMAND", 
-          "ORIENTATION_VIEW", 
-          "C.scene.transform_orientation_slots[0].type = 'VIEW'"
-        ], 
-        [
-          "row?"
-        ], 
-        [
-          "Cursor", 
-          "COMMAND", 
-          "ORIENTATION_CURSOR", 
-          "C.scene.transform_orientation_slots[0].type = 'CURSOR'"
-        ]
-      ], 
-      "DIALOG", 
-      "pd?pd_panel=2&pd_width=110", 
-      "PRESS", 
-      "", 
-      ""
-    ], 
-    [
       "Create", 
       "Object Mode", 
       "shift+RIGHTMOUSE", 
@@ -659,6 +533,183 @@
       "m?", 
       "PRESS", 
       "return bpy.context.object.mode == 'OBJECT' or bpy.context.object.mode == 'EDIT'", 
+      ""
+    ], 
+    [
+      "Modes", 
+      "3D View", 
+      "RIGHTMOUSE", 
+      [
+        [
+          "Vertex", 
+          "COMMAND", 
+          "VERTEXSEL", 
+          "bpy.ops.object.mode_set(mode='EDIT');bpy.ops.mesh.select_mode(type='VERT')"
+        ], 
+        [
+          "Toggle Move Brush", 
+          "COMMAND", 
+          "VIEW_PAN", 
+          "bpy.ops.sculpt.sculptmode_toggle();bpy.ops.wm.tool_set_by_id(name='builtin_brush.Grab')"
+        ], 
+        [
+          "Face", 
+          "COMMAND", 
+          "FACESEL", 
+          "bpy.ops.object.mode_set(mode='EDIT');bpy.ops.mesh.select_mode(type='FACE')"
+        ], 
+        [
+          "Edge", 
+          "COMMAND", 
+          "EDGESEL", 
+          "bpy.ops.object.mode_set(mode='EDIT');bpy.ops.mesh.select_mode(type='EDGE')"
+        ], 
+        [
+          "Show Hidden", 
+          "COMMAND", 
+          "", 
+          "bpy.ops.object.hide_view_clear()"
+        ], 
+        [
+          "Toggle Edit/Object Mode", 
+          "COMMAND", 
+          "EDITMODE_HLT", 
+          "bpy.ops.object.editmode_toggle()"
+        ], 
+        [
+          "Orientation", 
+          "MENU", 
+          "NONE", 
+          "Transform Orientations"
+        ], 
+        [
+          "Occlude Geometry", 
+          "PROP", 
+          "XRAY", 
+          "C.space_data.shading.show_xray"
+        ]
+      ], 
+      "PMENU", 
+      "pm?", 
+      "PRESS", 
+      "", 
+      ""
+    ], 
+    [
+      "Transform Orientations", 
+      "3D View", 
+      "", 
+      [
+        [
+          "row"
+        ], 
+        [
+          "Global", 
+          "COMMAND", 
+          "ORIENTATION_GLOBAL", 
+          "C.scene.transform_orientation_slots[0].type = 'GLOBAL'"
+        ], 
+        [
+          "row?"
+        ], 
+        [
+          "Local", 
+          "COMMAND", 
+          "ORIENTATION_LOCAL", 
+          "C.scene.transform_orientation_slots[0].type = 'LOCAL'"
+        ], 
+        [
+          "row?"
+        ], 
+        [
+          "Normal", 
+          "COMMAND", 
+          "ORIENTATION_NORMAL", 
+          "C.scene.transform_orientation_slots[0].type = 'NORMAL'"
+        ], 
+        [
+          "row?"
+        ], 
+        [
+          "Gimbal", 
+          "COMMAND", 
+          "ORIENTATION_GIMBAL", 
+          "C.scene.transform_orientation_slots[0].type = 'GIMBAL'"
+        ], 
+        [
+          "row?"
+        ], 
+        [
+          "View", 
+          "COMMAND", 
+          "ORIENTATION_VIEW", 
+          "C.scene.transform_orientation_slots[0].type = 'VIEW'"
+        ], 
+        [
+          "row?"
+        ], 
+        [
+          "Cursor", 
+          "COMMAND", 
+          "ORIENTATION_CURSOR", 
+          "C.scene.transform_orientation_slots[0].type = 'CURSOR'"
+        ]
+      ], 
+      "DIALOG", 
+      "pd?pd_panel=2&pd_width=110", 
+      "PRESS", 
+      "", 
+      ""
+    ], 
+    [
+      "UVEditorContextMenu", 
+      "UV Editor", 
+      "RIGHTMOUSE", 
+      [
+        [
+          "Vertex", 
+          "COMMAND", 
+          "NONE", 
+          "if bpy.context.scene.tool_settings.use_uv_select_sync:\n    bpy.ops.mesh.select_mode(type='VERT')\nelse:\n    bpy.context.scene.tool_settings.uv_select_mode = 'VERTEX'"
+        ], 
+        [
+          ""
+        ], 
+        [
+          "Face", 
+          "COMMAND", 
+          "NONE", 
+          "if bpy.context.scene.tool_settings.use_uv_select_sync:\n    bpy.ops.mesh.select_mode(type='FACE')\nelse:\n    bpy.context.scene.tool_settings.uv_select_mode = 'FACE'"
+        ], 
+        [
+          "Edge", 
+          "COMMAND", 
+          "NONE", 
+          "if bpy.context.scene.tool_settings.use_uv_select_sync:\n    bpy.ops.mesh.select_mode(type='EDGE')\nelse:\n    bpy.context.scene.tool_settings.uv_select_mode = 'EDGE'"
+        ], 
+        [
+          "UV Shell", 
+          "COMMAND", 
+          "NONE", 
+          "if not bpy.context.scene.tool_settings.use_uv_select_sync:\n    bpy.context.scene.tool_settings.uv_select_mode = 'ISLAND'"
+        ], 
+        [
+          "UV Sync Selection", 
+          "PROP", 
+          "UV_SYNC_SELECT", 
+          "C.scene.tool_settings.use_uv_select_sync"
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ]
+      ], 
+      "PMENU", 
+      "pm?", 
+      "PRESS", 
+      "", 
       ""
     ]
   ]
