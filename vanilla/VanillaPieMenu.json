@@ -3,7 +3,7 @@
   "menus": [
     [
       "Import_Export", 
-      "Window", 
+      "3D View", 
       "Q", 
       [
         [
@@ -673,7 +673,10 @@
           "if bpy.context.scene.tool_settings.use_uv_select_sync:\n    bpy.ops.mesh.select_mode(type='VERT')\nelse:\n    bpy.context.scene.tool_settings.uv_select_mode = 'VERTEX'"
         ], 
         [
-          ""
+          "Box Selection", 
+          "COMMAND", 
+          "", 
+          "bpy.ops.wm.tool_set_by_id(name='builtin.select_box')"
         ], 
         [
           "Face", 
