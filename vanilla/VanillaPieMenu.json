@@ -95,42 +95,6 @@
       ""
     ], 
     [
-      "RnD Pie _UV", 
-      "UV Editor", 
-      "", 
-      [
-        [
-          ""
-        ], 
-        [
-          ""
-        ], 
-        [
-          ""
-        ], 
-        [
-          ""
-        ], 
-        [
-          ""
-        ], 
-        [
-          ""
-        ], 
-        [
-          ""
-        ], 
-        [
-          ""
-        ]
-      ], 
-      "PMENU", 
-      "pm?", 
-      "PRESS", 
-      "", 
-      ""
-    ], 
-    [
       "Face", 
       "3D View", 
       "shift+RIGHTMOUSE", 
@@ -411,7 +375,7 @@
       ], 
       "PMENU", 
       "pm?", 
-      "TWEAK", 
+      "PRESS", 
       "return bpy.context.object.mode == 'EDIT'", 
       ""
     ], 
@@ -641,6 +605,60 @@
       "pm?", 
       "PRESS", 
       "", 
+      ""
+    ], 
+    [
+      "SnapVertex", 
+      "Window", 
+      "V", 
+      [
+        [
+          "Toggle Vertex Snap", 
+          "COMMAND", 
+          "TEXT", 
+          "toggle_snap = True if not C.scene.tool_settings.use_snap or (C.scene.tool_settings.snap_elements != {'VERTEX'} and C.scene.tool_settings.use_snap) else False;C.scene.tool_settings.use_snap = toggle_snap;snap = {'VERTEX'} if not C.scene.tool_settings.snap_elements == {'VERTEX'} else C.scene.tool_settings.snap_elements;C.scene.tool_settings.snap_elements = snap;bpy.context.scene.tool_settings.use_snap_grid_absolute = True"
+        ]
+      ], 
+      "MACRO", 
+      "m?", 
+      "PRESS", 
+      "return bpy.context.object.mode == 'OBJECT' or bpy.context.object.mode == 'EDIT'", 
+      ""
+    ], 
+    [
+      "SnapGrid", 
+      "Window", 
+      "X", 
+      [
+        [
+          "Toggle Grid Snap", 
+          "COMMAND", 
+          "TEXT", 
+          "toggle_snap = True if not C.scene.tool_settings.use_snap or (C.scene.tool_settings.snap_elements != {'INCREMENT'} and C.scene.tool_settings.use_snap) else False;C.scene.tool_settings.use_snap = toggle_snap;snap = {'INCREMENT'} if not C.scene.tool_settings.snap_elements == {'INCREMENT'} else C.scene.tool_settings.snap_elements;C.scene.tool_settings.snap_elements = snap;bpy.context.scene.tool_settings.use_snap_grid_absolute = True"
+        ]
+      ], 
+      "MACRO", 
+      "m?", 
+      "PRESS", 
+      "return bpy.context.object.mode == 'OBJECT' or bpy.context.object.mode == 'EDIT'", 
+      ""
+    ], 
+    [
+      "SnapEdge", 
+      "Window", 
+      "C", 
+      [
+        [
+          "Toggle Edge Snap", 
+          "COMMAND", 
+          "TEXT", 
+          "toggle_snap = True if not C.scene.tool_settings.use_snap or (C.scene.tool_settings.snap_elements != {'EDGE'} and C.scene.tool_settings.use_snap) else False;C.scene.tool_settings.use_snap = toggle_snap;snap = {'EDGE'} if not C.scene.tool_settings.snap_elements == {'EDGE'} else C.scene.tool_settings.snap_elements;C.scene.tool_settings.snap_elements = snap;bpy.context.scene.tool_settings.use_snap_grid_absolute = True"
+        ]
+      ], 
+      "MACRO", 
+      "m?", 
+      "PRESS", 
+      "return bpy.context.object.mode == 'OBJECT' or bpy.context.object.mode == 'EDIT'", 
       ""
     ]
   ]
