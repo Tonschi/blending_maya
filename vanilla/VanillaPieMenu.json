@@ -483,7 +483,7 @@
     ], 
     [
       "SnapVertex", 
-      "Window", 
+      "3D View", 
       "V", 
       [
         [
@@ -496,12 +496,12 @@
       "MACRO", 
       "m?", 
       "PRESS", 
-      "return bpy.context.object.mode == 'OBJECT' or bpy.context.object.mode == 'EDIT'", 
+      "", 
       ""
     ], 
     [
       "SnapGrid", 
-      "Window", 
+      "3D View", 
       "X", 
       [
         [
@@ -514,12 +514,12 @@
       "MACRO", 
       "m?", 
       "PRESS", 
-      "return bpy.context.object.mode == 'OBJECT' or bpy.context.object.mode == 'EDIT'", 
+      "", 
       ""
     ], 
     [
       "SnapEdge", 
-      "Window", 
+      "3D View", 
       "C", 
       [
         [
@@ -532,7 +532,7 @@
       "MACRO", 
       "m?", 
       "PRESS", 
-      "return bpy.context.object.mode == 'OBJECT' or bpy.context.object.mode == 'EDIT'", 
+      "", 
       ""
     ], 
     [
@@ -706,6 +706,54 @@
           ""
         ], 
         [
+          ""
+        ]
+      ], 
+      "PMENU", 
+      "pm?", 
+      "PRESS", 
+      "", 
+      ""
+    ], 
+    [
+      "UVEditorShiftContextMenu", 
+      "UV Editor", 
+      "shift+RIGHTMOUSE", 
+      [
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          "Stitch", 
+          "COMMAND", 
+          "", 
+          ""
+        ], 
+        [
+          "Move and Sew", 
+          "COMMAND", 
+          "", 
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          "Cut", 
+          "COMMAND", 
+          "", 
+          ""
+        ], 
+        [
+          "Sew", 
+          "COMMAND", 
+          "", 
           ""
         ]
       ], 
