@@ -762,6 +762,57 @@
       "PRESS", 
       "", 
       ""
+    ], 
+    [
+      "Shading", 
+      "Window", 
+      "Z", 
+      [
+        [
+          "Wireframe", 
+          "COMMAND", 
+          "SHADING_WIRE", 
+          "bpy.context.space_data.shading.type = 'WIREFRAME'"
+        ], 
+        [
+          "Solid", 
+          "COMMAND", 
+          "SHADING_SOLID", 
+          "bpy.context.space_data.shading.type = 'SOLID'"
+        ], 
+        [
+          "Material", 
+          "COMMAND", 
+          "MATERIAL", 
+          "bpy.context.space_data.shading.type = 'MATERIAL'"
+        ], 
+        [
+          "Rendered", 
+          "COMMAND", 
+          "SHADING_RENDERED", 
+          "bpy.context.space_data.shading.type = 'RENDERED'"
+        ], 
+        [
+          "Toggle Wireframe", 
+          "COMMAND", 
+          "SHADING_WIRE", 
+          "wire = bpy.context.object.show_wire;bpy.context.object.show_wire = False if wire else True"
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ], 
+        [
+          ""
+        ]
+      ], 
+      "PMENU", 
+      "pm?", 
+      "PRESS", 
+      "", 
+      ""
     ]
   ]
 }

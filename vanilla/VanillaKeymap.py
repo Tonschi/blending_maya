@@ -2,7 +2,16 @@ keyconfig_data = \
 [("Window",
   {"space_type": 'EMPTY', "region_type": 'WINDOW'},
   {"items":
-   [("",
+   [("wm.pme_user_pie_menu_call",
+     {"type": 'Z', "value": 'PRESS'},
+     {"properties":
+      [("pie_menu_name", 'Shading'),
+       ("invoke_mode", 'HOTKEY'),
+       ("keymap", 'Window'),
+       ],
+      },
+     ),
+    ("",
      {"type": 'NONE', "value": 'PRESS'},
      {    "active":False,
       },
@@ -2591,6 +2600,7 @@ keyconfig_data = \
      {"properties":
       [("name", 'VIEW3D_MT_shading_pie'),
        ],
+    "active":False,
       },
      ),
     ("view3d.toggle_shading",
